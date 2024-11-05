@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio João Pedro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTXRNf5C0dM7qZV/mF0V5l0e+b+4nS/vRppPx68sdPjox5F8C9i1IWkvKj7UB/0fZBW8C9pQA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="logo">João Pedro</h1>
+                <ul class="nav-links">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#testemunhos">Testemunhos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video autoplay muted loop>
+            <source src="assets/192066-891655462_medium.mp4" type="video/mp4">
+            Seu navegador não suporta a reprodução de vídeo.
+        </video>
+        <div class="container hero-overlay">
+            <h2>Olá, eu sou João Pedro</h2>
+            <p>Desenvolvedor Web</p>
+            <a href="#projetos" class="btn">Ver Projetos</a>
+        </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="sobre-conteudo">
+                <p>Olá, meu nome é João Pedro. Em 2024, tive a honra de ser selecionado para o Senac...</p>
+                <p>Além de programação, gosto bastante de esportes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="habilidades">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="habilidades-conteudo">
+                <div class="habilidade">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                    <div class="barra">
+                        <div class="progresso" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="habilidade">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                    <div class="barra">
+                        <div class="progresso" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="habilidade">
+                    <i class="fab fa-js-square"></i>
+                    <h3>JavaScript</h3>
+                    <div class="barra">
+                        <div class="progresso" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="projetos">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="projetos-conteudo">
+                <div class="projeto">
+                    <img src="assets/Captura de tela 2024-11-04 162524.png" alt="Projeto 1">
+                    <h3>Projeto 1</h3>
+                    <p>Ranking</p>
+                    <a href="#" class="btn" target="_blank">Ver Projeto</a>
+                </div>
+                <div class="projeto">
+                    <img src="projeto2.jpg" alt="Projeto 2">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição detalhada do projeto, tecnologias usadas e o que foi realizado.</p>
+                    <a href="#" class="btn" target="_blank">Ver Projeto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testemunhos -->
+    <section id="testemunhos" class="testemunhos">
+        <div class="container">
+            <h2>Testemunhos</h2>
+            <div class="testemunhos-conteudo">
+                <div class="testemunho">
+                    <p>"João Pedro entregou um trabalho excepcional no projeto X..."</p>
+                    <h4>Cliente A</h4>
+                </div>
+                <div class="testemunho">
+                    <p>"Excelente profissional! Muito organizado e proativo..."</p>
+                    <h4>Cliente B</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <form id="contatoForm">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 João Pedro</p>
+            <div class="social-links">
+                <a href="https://github.com/seuusuario" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/seuusuario" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:seuemail@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
