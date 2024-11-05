@@ -1,0 +1,299 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+}
+
+/* Estilos do Header e Navbar */
+header {
+    background: #656269;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.logo {
+    color: white;
+    font-size: 1.0rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f0f0f0;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px;
+}
+video{
+    position: absolute;
+}
+/* Seção Hero */
+.hero {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    animation: fadeIn 2s ease;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Seções */
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #060e16;
+    margin: 20px auto 0;
+}
+
+/* Sobre Mim */
+.sobre{
+    margin-top: 250px;
+}
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foto-sobre {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Habilidades */
+.habilidades-conteudo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.habilidade {
+    width: 22%;
+    text-align: center;
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+}
+
+.habilidade:hover {
+    transform: scale(1.05);
+}
+
+.barra {
+    background: #ddd;
+    border-radius: 5px;
+    height: 10px;
+    width: 100%;
+}
+
+.progresso {
+    background: #07101a;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Projetos */
+.projetos-conteudo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.projeto {
+    width: 30%;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+}
+
+.projeto img {
+    width: 100%;
+}
+
+/* Testemunhos */
+.testemunhos-conteudo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testemunho {
+    width: 30%;
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.testemunho:hover {
+    transform: translateY(-5px);
+}
+
+/* Contato */
+.contato {
+    background: #f1f1f1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    background: #05090e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #060b0f;
+}
+
+/* Footer */
+footer {
+    background: #070d14;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #007BFF;
+    }
+
+    .projeto, .testemunho, .habilidade {
+        width: 100%;
+    }
+}
