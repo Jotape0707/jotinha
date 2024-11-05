@@ -1,0 +1,329 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+}
+
+/* Estilos do Header e Navbar */
+header {
+    background: #656269;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f0f0f0;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px;
+}
+
+/* Seção Hero */
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-overlay h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-overlay p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e5533c;
+}
+
+/* Seção Sobre */
+.sobre {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.sobre h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sobre-conteudo {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Seção Habilidades */
+.habilidades {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.habilidades h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.habilidades-conteudo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.habilidade {
+    text-align: center;
+    margin: 20px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.habilidade i {
+    font-size: 3rem;
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+.barra {
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 10px;
+    margin-top: 10px;
+}
+
+.progresso {
+    background-color: #ff6347;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* Seção Projetos */
+.projetos {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.projetos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projetos-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projeto {
+    text-align: center;
+    margin: 20px;
+    flex: 1;
+    max-width: 300px;
+}
+
+.projeto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.projeto h3 {
+    margin: 15px 0;
+}
+
+.projeto p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Seção Testemunhos */
+.testemunhos {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.testemunhos h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.testemunhos-conteudo {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.testemunho {
+    margin-bottom: 20px;
+}
+
+.testemunho p {
+    font-style: italic;
+    color: #666;
+}
+
+.testemunho h4 {
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Seção Contato */
+.contato {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.contato h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contatoForm {
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+button.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #e5533c;
+}
+
+/* Footer */
+footer {
+    background-color: #656269;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff6347;
+}
